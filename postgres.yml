@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: postgres
   labels:
-    app: postgres
+    app: voting-app
 spec:
   replicas: 1
   selector:
