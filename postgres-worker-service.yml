@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: db
   labels:
-    app: voting-app
+    app: db-service
 spec:
   type: ClusterIP
   ports:
@@ -12,4 +12,4 @@ spec:
       targetPort: 5432
       protocol: TCP
   selector:  
-    app: voting-app
+    app: worker

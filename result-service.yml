@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: result-service
   labels:
-    app: result-app
+    app: result
 spec:
   type: NodePort
   ports:
@@ -13,4 +13,4 @@ spec:
       nodePort: 32100 #This port is enable on node to send the traffic
       protocol: TCP
   selector:
-      app: voting-app
+      app: result
